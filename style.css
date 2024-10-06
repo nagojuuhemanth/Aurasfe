@@ -1,0 +1,270 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #151523;
+    position: fixed;
+    padding: 0px 200px 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+     /* Ensure one line */
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #e67926; 
+    font-weight: bold;
+    white-space: nowrap; /* Ensure one line */
+}
+
+.nav-links {
+    padding-top:30px ;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #d5cccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.nav-links a:hover {
+    background-color: #a77028; 
+    color: #fff;
+}
+
+/* Login Button */
+.login-btn{
+    padding-bottom:10px ;
+    display: flex;
+}
+.login-btn .btn-login {
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login-btn .btn-login:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 350px;
+    margin: 15% auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #333;
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color */
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content .additional-options {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.modal-content .additional-options a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.modal-content .additional-options a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: left; /* Center content horizontally */
+    align-items: left; /* Center content vertically */
+    padding: 150px;
+    background-image: url('logo.jpg') ; /* Set the image as a background */ 
+    background-size: cover; /* Cover the entire hero section */
+    background-position: left; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 110vh; /* Ensure the hero section takes full viewport height */
+    padding-left:50px;
+}
+
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+    justify-content: left;
+    text-decoration-color: rgb(235, 122, 81);
+}
+
+.hero-content h3 {
+    text-align: left;
+    font-size: 3.8rem;
+    color: rgb(235, 122, 81);
+}
+
+.hero-content h1 {
+    text-align: left;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #e1e8e2; /* Green color */
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #e59c35;
+}
+
+.btn {
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Services Section */
+.services {
+    padding: 60px;
+    text-align: center;
+    background-color: #141727;
+}
+
+.services .service {
+    margin-bottom: 40px;
+}
+
+.services .service h2 {
+    font-size: 2.2rem;
+    color: #a76c28; /* Green color */
+    margin-bottom: 20px;
+}
+
+.services .service p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Make modal full width on small screens */
+    }
+
+    .hero {
+        flex-direction: column; /* Stack hero section on smaller screens */
+        padding: 40px;
+    }
+}
+footer {
+    background-color: rgb(23, 28, 40);
+}
+
+ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 30px;
+    padding-left: 50px;
+    margin-left: auto;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+ul li a {
+    color: rgb(153, 147, 147);
+    text-decoration: none;
+}
+ul li:hover{
+    text-decoration: underline;
+}
+
+.icons {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
